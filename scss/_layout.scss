@@ -1,0 +1,136 @@
+@import "variables.scss";
+
+
+
+header {
+
+  nav {
+
+    .navbar-nav {
+      padding-right: 3rem !important;
+    }
+    
+    .nav-item {
+      padding-right: .5rem;
+    }
+  }
+
+  #banner {
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-bottom: 6rem;
+  }
+}
+
+
+#maincontactarea {
+  padding-bottom: 5rem;
+
+
+  .fa-envelope {
+    font-size: 2.4rem;
+    padding-bottom: .8rem;
+  }
+
+  .fa-behance {
+    font-size: 2.4rem;
+    padding-bottom: .8rem;
+  }
+
+  .fa-github {
+    font-size: 2.4rem;
+    padding-bottom: .8rem;
+  }
+
+  .detailsrow {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    .col-sm {
+      padding-top: 2rem;
+      p {
+        margin-bottom: 0rem;
+      }
+    }
+  }
+
+  .fa-share-square {
+    font-size: 1rem;
+    margin-right: .8rem;
+  }  
+}
+
+#formarea {
+  padding-bottom: 1rem;
+  button {
+    margin-top: 2rem;
+  }
+
+  textarea {
+    padding-top: .9rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  input {
+    padding-top: .9rem;
+    padding-bottom: .8rem;
+    margin-bottom: 2.4rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  #formsent {
+    padding-top: 1rem;
+  }
+}
+
+
+
+.check {
+  visibility: hidden;
+}
+
+.checked {
+  visibility: visible;
+}
+
+
+
+
+footer {
+  padding-bottom: 2rem;
+
+  .fstftext {
+    margin-right: 1rem;
+  }
+
+  .linkcol {
+    margin-left: 3rem;
+  }
+
+  .buttoncol {
+    padding-right: 0rem !important;
+    margin-left: 2rem !important;
+  }
+}
+
+
+
+
+
+@media(min-width: 768px) {
+  #formarea {
+    padding-left: 4rem;
+  }
+}
+
+
+@media(min-width: 1024px) {
+  #formarea {
+    padding-left: 6rem;
+  }
+}

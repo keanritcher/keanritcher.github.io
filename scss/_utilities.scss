@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+
+
+.btn {
+  height: 1.8rem !important;
+  border-radius: 3rem !important;
+  padding: .1rem 1.4rem !important;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    height: 2rem !important;
+    border-radius: 3rem !important;
+    padding: .1rem 1.5rem !important;
+  }
+}

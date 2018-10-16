@@ -1,0 +1,150 @@
+@import "variables.scss";
+
+/*  FONTS  */
+
+
+@font-face {
+  font-family: "amaranthb";
+  src: url('../../ext/fonts/Amaranth-Bold.ttf');
+}
+
+
+@font-face {
+  font-family: "amaranthbi";
+  src: url('../../ext/fonts/Amaranth-BoldItalic.ttf');
+}
+
+
+@font-face {
+  font-family: "amaranthi";
+  src: url('../../ext/fonts/Amaranth-Italic.ttf');
+}
+
+
+@font-face {
+  font-family: "amaranthr";
+  src: url('../../ext/fonts/Amaranth-Regular.ttf');
+}
+
+
+/*  UBUNTU  */
+
+
+@font-face {
+  font-family: "ubuntub";
+  src: url('../../ext/fonts/Ubuntu-Bold.ttf');
+}
+
+
+@font-face {
+  font-family: "ubuntubi";
+  src: url('../../ext/fonts/Ubuntu-BoldItalic.ttf');
+}
+
+
+@font-face {
+  font-family: "ubuntui";
+  src: url('../../ext/fonts/Ubuntu-Italic.ttf');
+}
+
+
+@font-face {
+  font-family: "ubuntul";
+  src: url('../../ext/fonts/Ubuntu-Light.ttf');
+}
+
+
+@font-face {
+  font-family: "ubuntum";
+  src: url('../../ext/fonts/Ubuntu-Medium.ttf');
+}
+
+
+/*  FELIPA  */
+
+@font-face {
+  font-family: "felipar";
+  src: url('../../ext/fonts/Felipa-Regular.ttf');
+}
+
+/*  VARELA  */
+
+
+
+@font-face {
+  font-family: "varela";
+  src: url('../../ext/fonts/VarelaRound-Regular.ttf');
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  TEXT STYLES */
+
+.prim {
+  font-size: .9rem !important;
+}
+
+.sprim {
+  font-size: .7rem !important;
+}
+
+@media (min-width: 768px) {
+  .sprim {
+    font-size: 1rem !important;
+  }
+}
+
+
+.xprim {
+  font-size: .8rem !important;
+}
+
+.xxprim {
+  font-size: .5rem !important;
+}
+
+@media (min-width: 768px) {
+  .xxprim {
+    font-size: .9rem !important;
+  }
+}
+
+
+
+.secon {
+  font-size: 1rem !important;
+}
+
+.htext {
+  font-size: 1.4rem !important;
+}
+
+
+@media (min-width: 1024px) {
+  .htext {
+    font-size: 1.6rem !important;
+  }
+}
+
+.shtext {
+  font-size: 1.2rem !important;
+}
+
+
+.largetext {
+  font-size: 2rem !important;
+}
+
+@media (min-width: 768px) {
+  .largetext {
+    font-size: 3rem !important;
+  }
+}

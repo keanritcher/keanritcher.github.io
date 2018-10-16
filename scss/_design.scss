@@ -1,0 +1,134 @@
+@import "variables.scss";
+@import "fonts.scss";
+
+
+
+
+
+body {
+  background: linear-gradient(rgba(255, 255, 255, 0.884)rgba(255, 255, 255, 0.884)), url("../../ext/img/bkg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+
+
+
+header {
+
+  nav {
+
+    .navbar-brand {
+      font-family: felipar;
+      color: $base-color;
+    }
+
+    .navbar-toggler:focus {
+      outline: none !important;
+    }
+
+    .nav-link {
+      color: $ptext-color;
+      font-family: amaranthr;
+    }
+  }
+
+  #banner {
+    .htext {
+      font-family: amaranthi;
+    }
+
+    .prim {
+      font-family: ubuntum;
+      color: $ptext-color;
+    }
+  }
+}
+
+
+#maincontactarea {
+
+  .fa-envelope {
+    color: rgba(68, 0, 255, 0.884)
+  }
+
+  .fa-behance {
+    color: $base-color;
+  }
+
+  .fa-github {
+    color: rgb(0, 0, 0);
+  }
+
+  .trm {
+    font-family: ubuntubi;
+  }
+}
+
+
+#formarea {
+  textarea {
+    border-color: $bdim-color;
+    border-radius: .2rem;
+    background: white !important;
+  }
+
+  input {
+    border-color: $bdim-color;
+    border-radius: .2rem;
+    background: white !important;
+  }
+
+  #submitarea {
+    .sent {
+      color: rgb(127, 194, 2);
+      font-family: amaranthi;
+    }
+
+    .recheck {
+      color: rgb(194, 40, 2);
+      font-family: amaranthi;
+    }
+  }
+
+  .filled {
+    border-color: $bdim-color;
+  }
+
+  .notfilled {
+    border-color: $placeholder-color;
+  }
+  
+  .nofilling{
+    color: $ptext-color;
+  }
+
+
+    .invalid::placeholder {
+      color: $placeholder-color;
+      font-size: .8rem;
+    }
+    .invalid:-ms-input-placeholder {
+        color: $placeholder-color;
+        font-size: .8rem;
+    }
+    .invalid::-ms-input-placeholder { 
+        color: $placeholder-color;
+        font-size: .8rem;
+    }
+
+    
+}
+
+
+
+footer {
+  a {
+    color: $base-color;
+    font-family: amaranthr;
+  }
+}
