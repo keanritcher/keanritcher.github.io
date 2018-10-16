@@ -9,9 +9,9 @@ $webmaster_email = "keanritcher@gmail.com";
 This bit sets the URLs of the supporting pages.
 If you change the names of any of the pages, you will need to change the values here.
 */
-$feedback_page = "contact.html";
-$error_page = "contact.html";
-$thankyou_page = "contact.html";
+$feedback_page = "../contact.html";
+$error_page = "../contact.html";
+$thankyou_page = "../contact.html";
 
 /*
 This next bit loads the form field data into variables.
@@ -56,7 +56,7 @@ header( "Location: $feedback_page" );
 }
 
 // If the form fields are empty, redirect to the error page.
-elseif (empty($name) || empty($email_address) || empty($subject) || empty($message)) {
+elseif (empty($name) || empty($email_address)) {
 header( "Location: $error_page" );
 }
 
