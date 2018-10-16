@@ -18,13 +18,11 @@ This next bit loads the form field data into variables.
 If you add a form field, you will need to add it here.
 */
 $email_address = $_REQUEST['email'] ;
-$subject = $_REQUEST['subject'] ;
 $name = $_REQUEST['name'] ;
 $message = $_REQUEST['message'] ;
 $msg = 
 "First Name: " . $name . "\r\n" . 
 "Email: " . $email_address . "\r\n" .
-"Subject: " . $subject . "\r\n" . 
 "Message: " . $message ;
 
 /*
@@ -64,7 +62,7 @@ header( "Location: $error_page" );
 If email injection is detected, redirect to the error page.
 If you add a form field, you should add it here.
 */
-elseif ( isInjected($email_address) || isInjected($name)  || isInjected($subject)  || isInjected($message) ) {
+elseif ( isInjected($email_address) || isInjected($name)  ||  || isInjected($message) ) {
 header( "Location: $error_page" );
 }
 
