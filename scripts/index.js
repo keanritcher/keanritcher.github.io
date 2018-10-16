@@ -135,7 +135,7 @@ function submitHandler() {
 
 
 
-$(document).ready(function() {
+$("document").ready(function() {
   checkName();
   checkEmail();
   checkSubject();
