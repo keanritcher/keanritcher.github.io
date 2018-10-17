@@ -90,7 +90,7 @@ function checkMessage() {
 function ajaxify() {
   $.ajax({
     url : "../listening.php",
-    type: "*",
+    type: "POST",
     data : $("form").serialize(),
     success: function() {
       console.log("hello world")
