@@ -53,10 +53,6 @@ if (!isset($_REQUEST['email_address'])) {
 header( "Location: $feedback_page" );
 }
 
-// If the form fields are empty, redirect to the error page.
-elseif (empty($name) || empty($email_address)) {
-header( "Location: $error_page" );
-}
 
 /* 
 If email injection is detected, redirect to the error page.
