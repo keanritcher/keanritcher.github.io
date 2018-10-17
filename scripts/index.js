@@ -87,11 +87,13 @@ function checkMessage() {
 };
 
 
+var formcontent = $("#formarea").serialize(),
+
 function ajaxmentalize() {
   $.ajax({
     url : "../listening.php",
     type: "POST",
-    data : $("form").serialize(),
+    data : formcontent,
     success: function() {
       console.log("hello world")
     }
