@@ -1,13 +1,22 @@
 
 <?php
 
-Access-Control-Allow-Methods: POST, GET, OPTIONS
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+        header('Access-Control-Allow-Origin: *');
+        header('Access-Control-Allow-Methods: POST, GET, DELETE, PUT, PATCH, OPTIONS');
+        header('Access-Control-Allow-Headers: token, Content-Type');
+        header('Access-Control-Max-Age: 1728000');
+        header('Content-Length: 0');
+        header('Content-Type: text/plain');
+        die();
+    }
 
-header('Access-Control-Allow-Origin: *');
+    header('Access-Control-Allow-Origin: *');
+    header('Content-Type: application/json');
 
-header('Access-Control-Allow-Methods: GET, POST');
-
-header("Access-Control-Allow-Headers: X-Requested-With");
+    $ret = [
+        'result' => 'OK',
+    ];
 
 	
 
@@ -76,20 +85,8 @@ header( "Location: $error_page" );
 
 // If we passed all previous tests, send the email then redirect to the thank you page.
 else 
-	header('Access-Control-Allow-Origin: *');
-
-	header('Access-Control-Allow-Methods: GET, POST');
-
-	header("Access-Control-Allow-Headers: X-Requested-With");
-
 
 	mail( "$webmaster_email", "Feedback Form Results", $msg );
-
-	header('Access-Control-Allow-Origin: *');
-
-	header('Access-Control-Allow-Methods: GET, POST');
-
-	header("Access-Control-Allow-Headers: X-Requested-With");
 
 
 	header( "Location: $thankyou_page" );
