@@ -89,7 +89,7 @@ function checkMessage() {
 
 function ajaxify() {
   $.ajax({
-    url : "scripts/talktome.php",
+    url : "https://keanritcher.github.io/scripts/talktome.php",
     type: "POST",
     data : $("form").serialize(),
     success: function() {
