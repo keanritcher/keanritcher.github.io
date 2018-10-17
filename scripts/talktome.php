@@ -1,3 +1,8 @@
+<Location "/">
+  AllowMethods GET POST OPTIONS
+</Location>
+
+
 <?php
 /*
 This first bit sets the email address that you want the form to be submitted to.
