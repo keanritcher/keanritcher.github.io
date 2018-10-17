@@ -89,8 +89,8 @@ function checkMessage() {
 
 function ajaxify() {
   $.ajax({
-    url : "../talktome.php",
-    type: "",
+    url : "talktome.php",
+    type: "POST",
     data : $("form").serialize(),
     success: function() {
       console.log("hello world")
