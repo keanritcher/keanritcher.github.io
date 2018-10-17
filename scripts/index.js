@@ -87,9 +87,9 @@ function checkMessage() {
 };
 
 
-var formcontent = $("#formarea").serialize();
 
 function ajaxmentalize() {
+  var formcontent = $("#formarea").serialize();
   $.ajax({
     url : "../listening.php",
     type: "POST",
