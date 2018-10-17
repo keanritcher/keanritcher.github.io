@@ -1,22 +1,16 @@
-// array holding allowed Origin domains
-$allowedOrigins = array(
-  'https://keanritcher.github.io'
-);
- 
-if (isset($_SERVER['HTTP_ORIGIN']) && $_SERVER['HTTP_ORIGIN'] != '') {
-  foreach ($allowedOrigins as $allowedOrigin) {
-    if (preg_match('#' . $allowedOrigin . '#', $_SERVER['HTTP_ORIGIN'])) {
-      header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN']);
-      header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
-      header('Access-Control-Max-Age: 1000');
-      header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
-      break;
-    }
-  }
-}
-
 
 <?php
+
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+
+header('Access-Control-Allow-Origin: *');
+
+header('Access-Control-Allow-Methods: GET, POST');
+
+header("Access-Control-Allow-Headers: X-Requested-With");
+
+	
+
 /*
 This first bit sets the email address that you want the form to be submitted to.
 You will need to change this value to a valid email address that you can access.
@@ -81,9 +75,22 @@ header( "Location: $error_page" );
 }
 
 // If we passed all previous tests, send the email then redirect to the thank you page.
-else {
+else 
+	header('Access-Control-Allow-Origin: *');
+
+	header('Access-Control-Allow-Methods: GET, POST');
+
+	header("Access-Control-Allow-Headers: X-Requested-With");
+
 
 	mail( "$webmaster_email", "Feedback Form Results", $msg );
+
+	header('Access-Control-Allow-Origin: *');
+
+	header('Access-Control-Allow-Methods: GET, POST');
+
+	header("Access-Control-Allow-Headers: X-Requested-With");
+
 
 	header( "Location: $thankyou_page" );
 }
