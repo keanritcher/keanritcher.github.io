@@ -87,7 +87,7 @@ function checkMessage() {
 };
 
 
-var formcontent = $("#formarea").serialize(),
+var formcontent = $("#formarea").serialize();
 
 function ajaxmentalize() {
   $.ajax({
