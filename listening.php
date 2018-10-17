@@ -9,9 +9,9 @@ $senderSubject = $_POST['subject'];
 $senderMessage = $_POST['message'];
 
 $msg = 
-"Name: " . $senderName . "\r\n" . 
-"Email: " . $senderEmail . "\r\n" .
-"Email: " . $senderSubject "\r\n" .
+"Name: " . $senderName . 
+"Email: " . $senderEmail . 
+"Email: " . $senderSubject .
 "Message: " . $senderMessage ;
 
 
