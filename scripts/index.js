@@ -87,7 +87,7 @@ function checkMessage() {
 };
 
 
-function ajaxify() {
+function ajaxmentalize() {
   $.ajax({
     url : "../listening.php",
     type: "POST",
@@ -108,7 +108,7 @@ function submitHandler() {
         $(".wrong").addClass("check");
         $(".correct").removeClass("check");
         $(".correct").addClass("sent checked");
-        ajaxify();
+        ajaxmentalize();
         $("form").trigger("reset");
         setTimeout(function() {
         $(".wrong").removeClass("checked");
