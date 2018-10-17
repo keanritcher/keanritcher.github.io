@@ -38,9 +38,9 @@ $thankyou_page = "../contact.html";
 This next bit loads the form field data into variables.
 If you add a form field, you will need to add it here.
 */
-$email_address = $_REQUEST['email'] ;
-$name = $_REQUEST['name'] ;
-$message = $_REQUEST['message'] ;
+$email_address = $_POST['email'] ;
+$name = $_POST['name'] ;
+$message = $_POST['message'] ;
 $msg = 
 "First Name: " . $name . "\r\n" . 
 "Email: " . $email_address . "\r\n" .
@@ -70,7 +70,7 @@ function isInjected($str) {
 }
 
 // If the user tries to access this script directly, redirect them to the feedback form,
-if (!isset($_REQUEST['email_address'])) {
+if (!isset($_POST['email_address'])) {
 header( "Location: $feedback_page" );
 }
 
