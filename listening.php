@@ -6,11 +6,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Access-Control-Allow-Headers: token, Content-Type');
         header('Access-Control-Max-Age: 1728000');
         header('Content-Length: 0');
-        header('Content-Type: text/plain');
+        header('Content-Type: application/x-www-form-urlencoded');
         die();
     }
     header('Access-Control-Allow-Origin: *');
-    header('Content-Type: text/plain');
+    header('Content-Type: application/x-www-form-urlencoded');
     $ret = [
         'result' => 'OK',
     ];
